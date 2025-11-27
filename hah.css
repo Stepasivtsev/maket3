@@ -145,6 +145,10 @@ span {
   background: none;
 }
 
+.footer__icon--call {
+margin-left: -6px;
+}
+
 .footer__icon img{
   width: 40px;
   height: auto;
