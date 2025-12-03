@@ -162,15 +162,35 @@ margin-left: -6px;
   transform: scale(1.15);      
 }
 
+.footer__contact--email {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  margin-top: 0;
+  color: black;
+  text-decoration: none;
+  display: block;
+  margin-top: 16px;
+}
+
 .footer__contact--number {
   font-weight: 700;
   font-size: 24px;
   letter-spacing: -0.6px;
   margin-top: 0;
+  color: black;
+  text-decoration: none;
+  display: block;
+  margin-top: 12px;
 }
 
-.footer__contact--lang {
-  margin-top: 40px;
+
+.footer__lang {
+border: none;
+background: none;
+padding-left: 0px;
+margin-right: 5px;
+margin-top: 40px;
 }
 
 
