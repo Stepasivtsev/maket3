@@ -42,7 +42,7 @@ body {
 
 
   
-.header__inner {
+.header {
   display: flex;
   flex-direction: row;
   justify-content:left;
@@ -91,23 +91,20 @@ body {
   transform: scale(1.15);     
 }
 
-.main {
+.main-nav {
   padding-top: 10px;
+  position: relative;
 }
 
-.main__content {
-  display: flex;
-  align-items: center; 
-}
-
-.main__highlight {
-  width: 24px;
-  height: 40px;
-  background-color:#41F6D7;    
-  transform: rotate(-180deg);
+.main-nav::before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: 33px;
+  width: 7px;
+  height: 32px;
+  background-color: #41F6D7;
   border-radius: 6px;
-  margin-left: -20px; 
-  margin-bottom: 365px;
 }
 
 .main__services {
@@ -120,6 +117,10 @@ body {
   line-height: 52px;
 }
 
+.main__button--brands,
+span {
+  color: #7E7E82;
+}
 .main__button {
   transition: all 0.3s ease;        
 }
@@ -128,21 +129,56 @@ body {
   background-color: rgba(255, 62, 121, 0.1); 
 }
 
-span {
-  color: #7E7E82;
-}
 
 .footer {
   margin-left: 24px;
-  margin-top: 89px;
+  margin-top: 99px;
 }
 
-
-
+.footer__icons {
+  list-style: none;
+  padding-left: 6px;
+  display: flex;
+  gap: 16px;
+}
 
 .footer__icon {
   border: none;
   background: none;
+  
+}
+
+.footer__icon--call {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; 
+  border: none;               
+  background-color: #FF3E79;          
+  background-image: url("Images/call.svg"); 
+  background-repeat: no-repeat;
+  background-position: center;    
+}
+
+.footer__icon--chat {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; 
+  border: none;               
+  background-color: #FF3E79;          
+  background-image: url("Images/chat.svg"); 
+  background-repeat: no-repeat;
+  background-position: center;   
+}
+
+.footer__icon--profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; 
+  border: none;               
+  background-color: #FF3E79;          
+  background-image: url("Images/profile.svg"); 
+  background-repeat: no-repeat;
+  background-position: center;   
 }
 
 .footer__icon--call {
@@ -154,11 +190,11 @@ margin-left: -6px;
   height: auto;
 }
 
-.footer__icon img {
+.footer__icon {
   transition: all 0.3s ease;   
 }
 
-.footer__icon:hover img {
+.footer__icon:hover {
   transform: scale(1.15);      
 }
 
@@ -171,6 +207,7 @@ margin-left: -6px;
   text-decoration: none;
   display: block;
   margin-top: 16px;
+  font-style: normal;
 }
 
 .footer__contact--number {
@@ -182,15 +219,22 @@ margin-left: -6px;
   text-decoration: none;
   display: block;
   margin-top: 12px;
+  font-style: normal;
 }
 
+.footer__langs {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  margin-top: 40px;
+}
 
 .footer__lang {
 border: none;
 background: none;
 padding-left: 0px;
 margin-right: 5px;
-margin-top: 40px;
 }
+
 
 
